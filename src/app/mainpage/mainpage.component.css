@@ -1,0 +1,57 @@
+.myForm > * {
+    font: 1.4em 'Unkempt', sans-serif; 
+   }
+   .myForm {
+
+     display: grid;
+     grid-template-columns: [labels] auto [controls] 1fr;
+     grid-auto-flow: row;
+     grid-gap: .8em .5em;
+     background: rgb(75, 69, 69);
+     padding: 1.2em;
+     /* padding-top: 50px; */
+     color: #ffffff;
+     width: 60vw;
+         margin: 1.5em auto;
+   }
+   .text{
+    font-weight: bolder;
+    font-size: larger;
+    
+   }
+   .bg{
+    width: 100%;
+    height: 100%;
+    background-image:url("../../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   }
+   .myForm > label,
+   .myForm > fieldset  {
+     grid-column: labels;
+     grid-row: auto;
+   }
+   .myForm > input, 
+   .myForm > select,
+   .myForm > textarea,
+   .myForm > button {
+     grid-column: controls;
+     grid-row: auto;
+     padding: .4em;
+     border: 0;
+   }
+   .myForm > fieldset {
+     grid-column: span 2;
+   }  
+   .myForm > button {
+     background: rgb(255, 157, 0);
+     color: white;
+     }
+     .myForm > button:hover {
+      background: rgb(255,130, 0);
+      color: white;
+      }
+   .myForm > textarea {
+     min-height: 3em;
+     }

@@ -1,0 +1,31 @@
+<div class="whole">
+    <br>
+    <h5 class="castellee">YOUR HISTORY</h5> 
+    <br>
+    
+</div>
+
+<table class="tabcss" >
+  <thead>
+    <tr class="r">
+      
+      <!-- <th scope="col" class="tabhead" (click)="sort('MAT_DOC')">Material Doc Number&nbsp; <i class="fa fa-sort bcolor"></i></th> -->
+      <th scope="col" class="tabhead">NAME</th>
+      <th scope="col" class="tabhead">Height</th>
+      <th scope="col" class="tabhead">Weight</th>
+      <th scope="col" class="tabhead">BMI</th>
+      
+    </tr>
+  </thead>
+  <tbody *ngFor="let product of productList">
+   
+
+     <tr mdbTableCol *ngIf="product.total<=26 && product.total>=21">
+      <td class="tdcss">{{product.name}}</td>
+      <td class="tdcss">{{product.height}}</td>
+      <td class="tdcss">{{product.weight}}</td>
+      <td class="tdcss">{{product.total}}</td>
+      
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,33 @@
+<section> 
+    <div class="imgBx">
+        <img src="../../assets/signup.png">
+        
+    </div>
+<form class="contentBx">
+    <div class="formBx">
+        <h1>Register</h1>
+        <!-- <img src="../../assets/decline.png" alt="Avatar" width="200px" height="40px"> -->
+        <div class="inputBx">
+            <span>User name</span>
+            <input type="text" name="uname" [(ngModel)]="username" class="input form-control"> 
+        </div>
+        <div class="inputBx">
+            <span>Email ID</span>
+            <input type="text" name="name" [(ngModel)]="email" class="input form-control"> 
+        </div>
+        <div class="inputBx">
+            <span>Password</span>
+            <input type="password" name="pass"[(ngModel)]="password" class="input form-control">
+        </div>
+        <div class="inputBx">
+           <input type="submit" value="Register" name=""(click)="sin()">
+        </div>
+    </div>
+
+</form>
+<div class="divv">
+     <button height="20px" class="btnn"(click)="onclicka()"><i class="fa fa-home bcolor"></i></button>
+</div>
+
+
+</section>

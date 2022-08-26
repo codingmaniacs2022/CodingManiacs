@@ -1,0 +1,38 @@
+<!doctype html>
+
+<div class="bg">
+  
+<br>
+<br>
+<br>
+<br>
+<link href="https://fonts.googleapis.com/css?family=Unkempt" rel="stylesheet">
+
+<form class="myForm">
+    <h1><b><span class="text"><u>Enter your details:</u></span></b></h1>
+  <label for="customer_name">Name </label>
+  <input type="text" name="customer_name" id="customer_name" required [(ngModel)]="name" class="input form-control">
+
+  <label for="phone_number">Phone </label>
+  <input type="tel" name="phone_number" id="phone_number" [(ngModel)]="phone" class="input form-control" >
+  <label for="customer_age">Age </label>
+  <input type="number" name="customer_age" id="customer_age" required [(ngModel)]="age" class="input form-control">
+  <label for="customer_name">Gender(Enter "M" for male & "F" for female & "O" for others) </label>
+  <input type="text" name="customer_name" id="customer_name" required [(ngModel)]="gender" class="input form-control">
+  <label for="customer_h">Height(in cm)</label>
+  <input type="number" name="customer_h" id="customer_h" required [(ngModel)]="height" class="input form-control">
+
+  <label for="customer_w">Weight(in kg) </label>
+  <input type="number" name="customer_w" id="customer_w" required [(ngModel)]="weight" class="input form-control">
+
+  
+
+ 
+
+  <label for="comments">Special Instructions</label>
+  <textarea name="comments" id="comments" maxlength="500" [(ngModel)]="spl" class="input form-control"></textarea>
+
+  <button (click)="addProduct()">Submit Details</button>
+
+</form>
+</div>

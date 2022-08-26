@@ -1,0 +1,32 @@
+.whole {
+    height: 91%;
+    width: 100%;
+    background: yellow;
+    background-color: #fee2f8;
+background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 74%);
+}
+.lm {
+  margin-right: 8%;
+  margin-left: 8%;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text: 500; */
+  text-align:center;
+}
+
+.castellee {
+    margin-top: 0px;
+    text-align: center;
+    color: #800000;
+    letter-spacing: 0.1em;
+    font-size: 28px;
+    /* text-shadow: -1px 0 0 #000000, 1px 1px 0 #000000, */
+        /* 2px -1px 0 #000000, 3px 0 0 #000000; */
+  }
+
+  .img {
+    height: 380px;
+    width: 700px;
+    margin-left: 280px;
+    margin-top: 30px;
+    justify-content: center;
+  }
